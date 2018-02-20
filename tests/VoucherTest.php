@@ -19,11 +19,6 @@ class VoucherTest extends TestCase{
 
 	public function testVerify()
 	{
-		/*$GLOBALS['v'] = factory('App\Voucher')->make();
-
-		$voucher = $GLOBALS['v'];
-
-		echo var_dump($voucher);*/
 
 		$recipient = Recipient::all()->first();
 

@@ -12,8 +12,6 @@
 */
 
 
-
-
 $factory->define(App\Recipient::class, function (Faker\Generator $faker) {
 
 	return [

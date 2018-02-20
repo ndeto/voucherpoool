@@ -28,9 +28,7 @@ public function generate(Request $request){
 		$input['recipient_id'] = $i->id;
 		$input['expiration_date'] = $request->input('expiration_date');
 		$input['special_offer_id'] = $request->input('special_offer_id');
-		//DB::statement('SET FOREIGN_KEY_CHECKS=0;');
 		Voucher::create( $input );
-		//DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 	}
 
 	return response()->json(["status"=>true]);
